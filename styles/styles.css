@@ -1,0 +1,171 @@
+/* =========================
+   TIPOGRAFÍA Y COLORES
+   ========================= */
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
+
+:root {
+    --celeste: #73a8da;
+    --blanco: #FFFFFF;
+    --dorado: #FFD700;
+    --azul-oscuro: #17202A;
+    --gris-claro: #F2F6FA;
+}
+
+
+/* =========================
+   CONFIGURACIÓN GENERAL
+   ========================= */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    background-color: var(--gris-claro);
+    color: var(--azul-oscuro);
+    line-height: 1.6;
+}
+
+
+/* =========================
+   ENCABEZADO
+   ========================= */
+
+.encabezado {
+    background-color: var(--celeste);
+    color: var(--blanco);
+    text-align: center;
+    padding: 30px 20px;
+}
+
+.titulo-principal {
+    margin: 0 0 20px;
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+
+/* =========================
+   NAVEGACIÓN
+   ========================= */
+
+.lista-navegacion {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.lista-navegacion a {
+    color: var(--blanco);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.lista-navegacion a:hover {
+    color: var(--dorado);
+}
+
+
+/* =========================
+   CONTENIDO PRINCIPAL
+   ========================= */
+
+.contenido-principal {
+    max-width: 1100px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.seccion {
+    background-color: var(--blanco);
+    padding: 30px;
+    margin-bottom: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.titulo-seccion {
+    color: var(--celeste);
+    font-size: 2rem;
+    font-weight: 700;
+    margin-top: 0;
+}
+
+.texto {
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+
+/* =========================
+   IMÁGENES
+   ========================= */
+
+.figura {
+    margin: 30px 0 0;
+    text-align: center;
+}
+
+.imagen-principal {
+    display: block;
+    max-width: 100%;
+    width: 800px;
+    height: auto;
+    margin: 0 auto;
+    border-radius: 10px;
+}
+
+.descripcion-imagen {
+    margin-top: 10px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: #566573;
+}
+
+
+/* =========================
+   ARTÍCULOS
+   ========================= */
+
+.articulo {
+    padding: 20px;
+    margin-top: 20px;
+    border-left: 5px solid var(--celeste);
+    background-color: var(--gris-claro);
+}
+
+.subtitulo {
+    margin-top: 0;
+    color: var(--azul-oscuro);
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+
+
+/* =========================
+   PIE DE PÁGINA
+   ========================= */
+
+.pie-pagina {
+    background-color: var(--azul-oscuro);
+    color: var(--blanco);
+    text-align: center;
+    padding: 30px 20px;
+    margin-top: 40px;
+}
+
+.pie-pagina a {
+    color: var(--celeste);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.pie-pagina a:hover {
+    color: var(--dorado);
+}
