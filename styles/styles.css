@@ -18,6 +18,8 @@
    ========================= */
 
 * {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
@@ -35,9 +37,11 @@ body {
    ========================= */
 
 .encabezado {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     background-color: var(--celeste);
     color: var(--blanco);
-    text-align: center;
     padding: 30px 20px;
 }
 
@@ -55,6 +59,7 @@ body {
 .lista-navegacion {
     display: flex;
     justify-content: center;
+    align-items: center;
     gap: 25px;
     list-style: none;
     padding: 0;
@@ -83,6 +88,9 @@ body {
 }
 
 .seccion {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
     background-color: var(--blanco);
     padding: 30px;
     margin-bottom: 30px;
@@ -168,4 +176,10 @@ body {
 
 .pie-pagina a:hover {
     color: var(--dorado);
+}
+
+.referentes {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
